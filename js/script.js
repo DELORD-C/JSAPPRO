@@ -23,6 +23,7 @@ console.log(date.toLocaleDateString());
 console.log(('0' + date.getDate()).slice(-2) + '-' + ('0' + (date.getMonth() + 1)).slice(-2) + '-' + date.getFullYear());
 
 let str = 'Ceci est un test.';
+// L'objet String permet de réaliser diverses opérations sur les chaines de caractères
 //Grâce aux méthodes de l'object String, modifier notre chaîne de caractères pour arriver au résultat suivant :
 //Ceci Est Un Exercice.
 
@@ -35,6 +36,7 @@ for (let index = 0; index < mots.length; index++) {
 str = mots.join(' ');
 str = str.replace('Test', 'Exercice');
 
+// L'objet Math permet de réaliser diverses opérations mathématiques
 // Grâce à l'objet Math créer une fonction randomNum qui respectera l'exemple suivant :
 // console.log(randomNum(20, 1))
 // console.log(randomNum(1, 10))
@@ -57,8 +59,9 @@ function randomNum (min, max) {
     return min + Math.floor(Math.random() * (max - min + 1));
 }
 
-
-//grâce à intl créer une constante objet qui permettra de formater un nombre entier donné en paramètre afin de repecter l'exemple suivant :
+// L'objet Intl permet d'internationaliser des dates, nombres monnétaires, etc.
+// grâce à intl créer une constante objet qui permettra de formater un nombre entier donné
+// en paramètre en Euro afin de respecter l'exemple suivant :
 // console.log(euro.format(8000));
 // console.log(euro.format(25));
 // console.log(euro.format(99600023147));
@@ -66,4 +69,8 @@ function randomNum (min, max) {
 // 25,00 €
 // 99 600 023 147,00 €
 
-const euro = new Intl
+const euro = new Intl.NumberFormat('fr-FR', {
+    style: 'currency',
+    currency: 'EUR'
+});
+
