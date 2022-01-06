@@ -60,7 +60,7 @@ function randomNum (min, max) {
 }
 
 // L'objet Intl permet d'internationaliser des dates, nombres monnétaires, etc.
-// grâce à intl créer une constante objet qui permettra de formater un nombre entier donné
+// grâce à Intl créer une constante objet qui permettra de formater un nombre entier donné
 // en paramètre en Euro afin de respecter l'exemple suivant :
 // console.log(euro.format(8000));
 // console.log(euro.format(25));
@@ -73,4 +73,3 @@ const euro = new Intl.NumberFormat('fr-FR', {
     style: 'currency',
     currency: 'EUR'
 });
-
