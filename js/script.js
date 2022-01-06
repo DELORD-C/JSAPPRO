@@ -16,3 +16,7 @@ const target = { a: 1, b: 2 };
 const source = { b: 4, c: 5 };
 Object.assign(target, source);
 //Object.assign(cible, source) permet de copier les attributs de l'objet source dans l'objet cible (remplace)
+
+let date = new Date;
+console.log(date);
+//Gràce à l'object Date, afficher dans la console la date d'aujourd'hui au format : DD/MM/AAAA
