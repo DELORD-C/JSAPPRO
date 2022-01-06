@@ -35,3 +35,35 @@ for (let index = 0; index < mots.length; index++) {
 str = mots.join(' ');
 str = str.replace('Test', 'Exercice');
 
+// Grâce à l'objet Math créer une fonction randomNum qui respectera l'exemple suivant :
+// console.log(randomNum(20, 1))
+// console.log(randomNum(1, 10))
+// console.log(randomNum(6))
+// console.log(randomNum())
+// 4
+// 1
+// 2
+// 0
+
+function randomNum (min, max) {
+    if (min == null && max == null) {
+        return 0;
+    }
+
+    if (max == null) {
+        max = min;
+        min = 0;
+    }
+    return min + Math.floor(Math.random() * (max - min + 1));
+}
+
+
+//grâce à intl créer une constante objet qui permettra de formater un nombre entier donné en paramètre afin de repecter l'exemple suivant :
+// console.log(euro.format(8000));
+// console.log(euro.format(25));
+// console.log(euro.format(99600023147));
+// 8 000,00 €
+// 25,00 €
+// 99 600 023 147,00 €
+
+const euro = new Intl
