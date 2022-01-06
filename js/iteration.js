@@ -60,10 +60,10 @@ function* fibonacci () {
 
 let fib = fibonacci();
 
-console.log(fib.next().value);
-console.log(fib.next().value);
-console.log(fib.next().value);
-console.log(fib.next().value);
-console.log(fib.next().value);
-console.log(fib.next().value);
-console.log(fib.next(true).value); //passer une valeur dans next() permet de la retrouver dans notre générateur (résultat de yield)
+// console.log(fib.next().value);
+// console.log(fib.next().value);
+// console.log(fib.next().value);
+// console.log(fib.next().value);
+// console.log(fib.next().value);
+// console.log(fib.next().value);
+// console.log(fib.next(true).value); //passer une valeur dans next() permet de la retrouver dans notre générateur (résultat de yield)
