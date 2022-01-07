@@ -1,7 +1,7 @@
 const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
         // resolve('Test');
-        reject('Erreur');
+        // reject('Erreur');
     }, 500)
 });
 
@@ -27,10 +27,9 @@ test().then(function() {
     console.log('b');
 });
 
-function timeout(ms) {
+function job() {
     return new Promise(resolve => setTimeout(function(){
-        console.log('a');
-        resolve();
-    }, ms))
+        resolve('Hello World');
+    }, 2000))
 }
 
