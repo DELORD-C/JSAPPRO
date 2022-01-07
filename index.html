@@ -5,13 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Appro</title>
+    <style>
+        #bar {
+            position: relative;
+            height: 50px;
+            border: 1px solid grey;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+        }
+        #inner {
+            position: absolute;
+            height: 100%;
+            width: 0;
+            background-color: green;
+            left: 0;
+            transition: 0.4s ease-in-out;
+        }
+        #bar > p {
+            z-index: 1;
+            color: #747474;
+            mix-blend-mode: difference;
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
+    <div id="bar">
+        <div id="inner"></div>
+        <p><span id="percent">0</span>%</p>
+    </div>
     <script src="js/script.js"></script>
     <script src="js/class.js"></script>
     <script src='js/iteration.js'></script>
     <script src='js/collections.js'></script>
     <script src="js/promise.js"></script>
-    <script src="js/functions.js"></script>
+    <!-- <script src="js/functions.js"></script> -->
+    <script src="js/ajax.js"></script>
 </body>
 </html>

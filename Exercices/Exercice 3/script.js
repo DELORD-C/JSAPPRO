@@ -27,7 +27,7 @@ class API {
         return new Promise((resolve) => {
             fetch(this.url).then(function(result) {
                 result.json().then(function(json){
-                    resolve(json.entries.filter(entrie => entrie.API.toLowerCase().includes(string)));
+                    resolve(json.entries.filter(entrie => entrie.API.toLowerCase().includes(string.toLowerCase())));
                 });
             })
         })
