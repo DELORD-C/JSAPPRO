@@ -28,4 +28,3 @@ class Chifumi {
 
 let anim = new Anim;
 Chifumi.loadScores();
-console.log(window);
