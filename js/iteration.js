@@ -16,7 +16,7 @@ function iterateur (start = 0, end = Infinity, step = 1) {
             return result;
         }
     }
-
+    
     return iterator;
 }
 
@@ -66,4 +66,14 @@ let fib = fibonacci();
 // console.log(fib.next().value);
 // console.log(fib.next().value);
 // console.log(fib.next().value);
-// console.log(fib.next(true).value); //passer une valeur dans next() permet de la retrouver dans notre générateur (résultat de yield)
+// console.log(fib.next(true).value);
+// passer une valeur dans next() permet de la retrouver dans notre générateur
+// (résultat de yield)
+
+
+// Un exemple d'utilisation des iterateurs / generateurs
+// Si on devait "scrapper" des données sur de multiples pages webs, la charge de
+// travail serait enorme, de plus, il faudrait attendre que TOUTES les pages
+// aient été téléchargées pour effectuer des actions dessus.
+// Grâce aux itérateurs / générateurs, on peut récupérer chaque donnée une par
+// une et effectuer des actions dessus avant de passer à la suivante.

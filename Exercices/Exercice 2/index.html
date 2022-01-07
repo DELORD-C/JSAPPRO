@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ChiFuMi</title>
+</head>
+<body>
+    <p id='pScoreDisplay'>Votre score : <span id='pScore'>0</span></p>
+    <p id='iaScoreDisplay'>Score de l'ordinateur : <span id='iaScore'>0</span></p>
+    
+    <div id='game'>
+        <div id="text"></div>
+        <div class="gameContainer" id="iaGame"></div>
+        <div class="gameContainer" id="pGame"></div>
+    </div>
+    <div id='commands'>
+        <button onclick="Chifumi.play('pierre')">Pierre</button>
+        <button onclick="Chifumi.play('feuille')">Feuille</button>
+        <button onclick="Chifumi.play('ciseaux')">Ciseaux</button>
+    </div>
+    <script src="js/plays.js"></script>
+    <script src="js/anim.js"></script>
+    <script src="js/chifumi.js"></script>
+</body>
+</html>

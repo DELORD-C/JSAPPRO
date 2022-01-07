@@ -1,0 +1,37 @@
+p {
+    position: absolute;
+    top: 0;
+}
+
+#iaScoreDisplay {
+    right: 10px;
+}
+
+#game {
+    margin-top: 50px;
+    height: 500px;
+    position: relative;
+}
+
+#text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 100px;
+}
+
+.gameContainer {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameContainer > img {
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
